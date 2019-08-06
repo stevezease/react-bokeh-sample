@@ -86,9 +86,19 @@
     color: white;
     cursor: pointer;
 }
+.export-input {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
 
 .export-text-area {
-    height: calc(100% - 60px);
+    height: 250px;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;

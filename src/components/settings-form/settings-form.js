@@ -76,25 +76,31 @@ const SettingsForm = ({
                 >
                     <div className="settings-header">Export</div>
                     <div className="export-description">
-                        {' '}
-                        Pass this object into your bokeh props!
+                        Pass these props into your Bokeh object!
                     </div>
-                    <textarea className="export-text-area" readOnly>
-                        {JSON.stringify(
-                            {
-                                randomGenerate: true,
-                                randomGenerateSettings: {
+                    <div className="settings-container">
+                        <div>randomGenerate:</div>
+                        <input className="export-input" value="true" readOnly />
+                    </div>
+                    <div className="settings-container">
+                        <div>randomGenerateSettings:</div>
+                        <textarea className="export-text-area" readOnly>
+                            {JSON.stringify(
+                                {
                                     colors,
                                     minSize,
                                     maxSize,
                                     numLights
                                 },
-                                lights: []
-                            },
-                            undefined,
-                            8
-                        )}
-                    </textarea>
+                                undefined,
+                                8
+                            )}
+                        </textarea>
+                    </div>
+                    <div className="settings-container">
+                        <div>lights:</div>
+                        <input className="export-input" value="[]" readOnly />
+                    </div>
                 </div>
                 <button
                     className="export-button"
