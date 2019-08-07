@@ -47,7 +47,6 @@ const presetList = [
 ];
 const Presets = ({ setColors, setMinSize, setMaxSize, setNumLights }) => {
     const setPreset = ({ colors, minSize, maxSize, numLights }) => {
-        console.log('hi');
         setColors(colors);
         setMinSize(minSize);
         setMaxSize(maxSize);

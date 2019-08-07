@@ -17,6 +17,9 @@ const SettingsForm = ({
     setNumLights
 }) => {
     const [showExport, setShowExport] = useState(false);
+    console.log(colors);
+    const randomGenerateSettings = { colors, minSize, maxSize, numLights };
+    console.log(randomGenerateSettings);
     return (
         <div
             className="settings-shell"
@@ -84,18 +87,14 @@ const SettingsForm = ({
                     </div>
                     <div className="settings-container">
                         <div>randomGenerateSettings:</div>
-                        <textarea className="export-text-area" readOnly>
-                            {JSON.stringify(
-                                {
-                                    colors,
-                                    minSize,
-                                    maxSize,
-                                    numLights
-                                },
+                        <textarea
+                            className="export-text-area"
+                            value={JSON.stringify(
+                                randomGenerateSettings,
                                 undefined,
                                 8
                             )}
-                        </textarea>
+                        />
                     </div>
                     <div className="settings-container">
                         <div>lights:</div>
