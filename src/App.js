@@ -14,7 +14,6 @@ function App() {
         '#b6080b',
         '#6a4260'
     ]);
-
     const [minSize, setMinSize] = useState(50);
     const [maxSize, setMaxSize] = useState(300);
     const [numLights, setNumLights] = useState(20);
@@ -42,6 +41,8 @@ function App() {
                 setMaxSize={setMaxSize}
                 numLights={numLights}
                 setNumLights={setNumLights}
+                backgroundColor={backgroundColor}
+                setBackgroundColor={setBackgroundColor}
             />
         </div>
     );

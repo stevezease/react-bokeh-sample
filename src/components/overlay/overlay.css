@@ -7,3 +7,22 @@
     right: 0x;
     overflow: hidden;
 }
+
+.background-selector {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    height: 30px;
+    border-radius: 5px;
+}
+.background-selector:hover {
+    border-color: white;
+}
+
+.action-bar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    align-items: center;
+}
